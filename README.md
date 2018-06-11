@@ -22,8 +22,6 @@ It will be played at NYC Python on June 14, 2018: https://www.meetup.com/nycpyth
 Your tasks are as follows:
 - create a command-line program, `tictacgame.py` that allows a user to
   interactively play a game of Tic Tac Toe
-- create a command-line program, `tictacmaster.py` that interacts with
-  the previous program and plays a strategically optimal game of Tic Tac Toe
 - create a command-line program, `connect3game.py` that allows a user to
   interactively play a game of Connect Three
 

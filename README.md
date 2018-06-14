@@ -233,7 +233,17 @@ built before, it can likely be modified to fit the new board style.
 
 ## The Move Interface
 
+This is a serious change from Tic-Tac-Toe. The interface itself will
+probably not change, but the underlying logic will change
+significantly.
+
+Consider that connect 3 expects a form of "gravity" to affect the
+position based on moves.
+
 ## Player Input
+
+This should just require some basic modification of your Tic-Tac-Toe
+input system.
 
 ## AI
 
@@ -247,6 +257,23 @@ you go. Expect to need your entire team to get this running well.
 
 ## Check for Victory
 
+This step can be either simple or hard depending on how you wrote your
+Tic-Tac-Toe algorithm. Because the 3-in-a-row don't fill the entire
+graph you need to check each position against each possible 3 in a row.
+
+Think about how you can prevent your algorithm from checking the same
+set of spaces more than once.
+
 # 8:00 - 8:30 Sprint #3 Recommendation
 
+Time to finish up connect 3. Sprint 2 has most of the information for a
+good plan, so now it's time to polish up and improve your AI.
+
 ## AI
+
+If you followed the advice above, you should have a rudimentary
+decision engine and some basic choices implemented. Time to think about
+improving your AI's decision making. Consider how you'd make decisions
+based on board state.
+
+What kinds of patterns would you look for? How do you respond to them?

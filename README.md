@@ -237,6 +237,14 @@ built before, it can likely be modified to fit the new board style.
 
 ## AI
 
+AI for connect 3 is going to be more complicated than Tic-Tac-Toe, so
+focus on connecting to the move interface. After you do that,
+implment a random choice methodology that can be used for a fallback.
+
+After that, it's all about choosing what decisions to prioritize and
+writing code that lets you add new decisions (in arbitrary orders) as
+you go. Expect to need your entire team to get this running well.
+
 ## Check for Victory
 
 # 8:00 - 8:30 Sprint #3 Recommendation

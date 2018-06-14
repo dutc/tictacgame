@@ -205,7 +205,75 @@ completed board to be able to build.
 
 This is the glue code that keeps the loop running. Can be written first,
 it can be written as you go and have new features available, or it can
-be written last once all the features work.
+be written last, once all the features work.
 
 # 7:15 - 7:45 Sprint #2 Recommendation
+
+During this period you should finish tic-tac-toe if you haven't, but
+at some point, you should start connect 3.
+
+Connect3 is remarkably similar to Tic Tac Toe but to cover the bases,
+you'll need:
+
+* A board
+* A move interface
+* Player input
+* AI input
+* AI decision making
+* Checking for victory
+* An engine
+
+The good news is, your engine from Tic-Tac-Toe can probably run
+connect3 without too much modification.
+
+## The Board
+
+Your board is different, as are your moves. Whatever representation you
+built before, it can likely be modified to fit the new board style.
+
+## The Move Interface
+
+This is a serious change from Tic-Tac-Toe. The interface itself will
+probably not change, but the underlying logic will change
+significantly.
+
+Consider that connect 3 expects a form of "gravity" to affect the
+position based on moves.
+
+## Player Input
+
+This should just require some basic modification of your Tic-Tac-Toe
+input system.
+
+## AI
+
+AI for connect 3 is going to be more complicated than Tic-Tac-Toe, so
+focus on connecting to the move interface. After you do that,
+implment a random choice methodology that can be used for a fallback.
+
+After that, it's all about choosing what decisions to prioritize and
+writing code that lets you add new decisions (in arbitrary orders) as
+you go. Expect to need your entire team to get this running well.
+
+## Check for Victory
+
+This step can be either simple or hard depending on how you wrote your
+Tic-Tac-Toe algorithm. Because the 3-in-a-row don't fill the entire
+graph you need to check each position against each possible 3 in a row.
+
+Think about how you can prevent your algorithm from checking the same
+set of spaces more than once.
+
 # 8:00 - 8:30 Sprint #3 Recommendation
+
+Time to finish up connect 3. Sprint 2 has most of the information for a
+good plan, so now it's time to polish up and improve your AI.
+
+## AI
+
+If you followed the advice above, you should have a rudimentary
+decision engine and some basic choices implemented. Time to think about
+improving your AI's decision making. Consider how you'd make decisions
+based on board state.
+
+What kinds of patterns would you look for? How do you respond to them?

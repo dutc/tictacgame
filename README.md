@@ -138,5 +138,74 @@ Please notify an organizer if you need help with any of the following.
 
 Focus on `tictacgame.py`.
 
+The elements to make tictacgame work are:
+
+* The board
+* Displaying game state
+* A move interface
+* Player input
+* AI strategy
+* AI input
+* Checking for victory
+* the engine
+
+## The Board
+
+Tic-Tac-Toe is small enough that the in memory representation can be
+almost anything. Whoever takes on the board should also consider
+how to display it.
+
+Remember that this object (whatever it is) will need to talk to your
+teammate's systems, and you'll need to formalize the API for
+interacting with it very quickly.
+
+## Player Input
+
+This is a somewhat simple problem with a few tricks. Remember that
+ultimately what the player inputs does not need to match how your team
+represents that information in the system. Also consider what you do if
+your player provides inappropriate input.
+
+You'll also need to set up the command line interface to run your
+script.
+
+## The Move Interface
+
+The move interface is how player and AI input can translate input into
+updating the game state.
+
+You probably don't want the API to match how users will input their
+moves.
+
+This will either need to be a function that takes a board object _or_ a
+method on a `Board` class. (Or maybe there's a third way.)
+
+## AI
+
+This is the hard part.
+
+Consider that the move decision is based on a series of binary choices.
+
+Recognize that the AI will need to be told it's time to move.
+
+The API between the AI and the Move Interface is going to be important.
+(Consider firming up how this happens in the first few minutes.)
+
+## Checking For Victory
+
+You have a board, you have moves that are stored how you like, now, at
+the end of each turn, you need to check for victory.
+
+Write an algorithm that can check the board for possible wins.
+
+This absolutely needs either a well defined board interface _or_ a
+completed board to be able to build.
+
+## The engine
+
+This is the glue code that keeps the loop running. Can be written first,
+it can be written as you go and have new features available, or it can
+be written last once all the features work.
+
 # 7:15 - 7:45 Sprint #2 Recommendation
 # 8:00 - 8:30 Sprint #3 Recommendation

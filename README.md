@@ -205,7 +205,40 @@ completed board to be able to build.
 
 This is the glue code that keeps the loop running. Can be written first,
 it can be written as you go and have new features available, or it can
-be written last once all the features work.
+be written last, once all the features work.
 
 # 7:15 - 7:45 Sprint #2 Recommendation
+
+During this period you should finish tic-tac-toe if you haven't, but
+at some point, you should start connect 3.
+
+Connect3 is remarkably similar to Tic Tac Toe but to cover the bases,
+you'll need:
+
+* A board
+* A move interface
+* Player input
+* AI input
+* AI decision making
+* Checking for victory
+* An engine
+
+The good news is, your engine from Tic-Tac-Toe can probably run
+connect3 without too much modification.
+
+## The Board
+
+Your board is different, as are your moves. Whatever representation you
+built before, it can likely be modified to fit the new board style.
+
+## The Move Interface
+
+## Player Input
+
+## AI
+
+## Check for Victory
+
 # 8:00 - 8:30 Sprint #3 Recommendation
+
+## AI
